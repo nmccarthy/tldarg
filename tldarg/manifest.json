@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "tldarg",
+	"description": "Be concise.",
+	"version": "0.1",
+	"icons": {
+		"16" : "images/19_icon.png",
+		"48" : "images/48_icon.png",
+		"128" : "images/128_icon.png"
+	},
+	"content_scripts": [ {
+	    "matches": ["https://www.yammer.com/*", "https://www.staging.yammer.com/*", "https://www.thunderdome.yammer.com/*"],
+	    "js": ["js/jquery-1.9.1.min.js", "js/background.js"]
+	  }]
+}
