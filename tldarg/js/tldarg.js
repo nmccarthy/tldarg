@@ -6,6 +6,7 @@ yam.$(document).ready(function() {
 			html = yam.$('.yj-tapf-precaret').html();
 			messageTruncater = new yam.helper.message.MessageListItemTruncater;
 			truncated = messageTruncater.truncate(html, 800, 500, 500);
+			console.log(truncated);
 			if(truncated != html) {
 				possibleTruncation = yam.$(truncated);
 				if(possibleTruncation[0].innerHTML != possibleTruncation[3].innerHTML) {
